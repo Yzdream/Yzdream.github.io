@@ -1,6 +1,4 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Yzdream/Yzdream.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+一直想搭建一个自己的博客，在网上看到大多数都是用的wordpress,我也看了一下，感觉有点小麻烦，于是就在GitHub上练练手，毕竟是免费的空间，对于还处于学习阶段的我来说，还是很不错的。
