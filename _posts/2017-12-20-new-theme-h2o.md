@@ -37,7 +37,18 @@ tags: 博客 Github jekyll Hexo
 ![](https://i.imgur.com/rKPMvo1.png)
 
 ### 第四部
-安装完成后打开 Git Bash，将我们的仓库也就是博客克隆到本地。
+安装完成后打开 Git Bash。
+
+首先配置我们的github身份
+
+$ git config --global user.name "yinwenbing"  //配置用户名称
+$ git config --global user.email "312816708@qq.com" //配置用户邮箱
+
+然后输入 $ ssh-keygen -t rsa 连续按三次回车，在C盘登录用户目录中会生成.ssh 文件, .ssh下可以找到id_rsa 和 id_rsa.pub两个文件,
+将id_rsa.pub用记事本打开，到 Github 的 Settings，点击左侧菜单的 SSH and GPG keys，点击 New SSH key，将id_rsa.pub里的内容全部复制到github中去，提交后就完成了git和github的配置了。
+
+
+然后将我们的仓库也就是博客克隆到本地
 ![](https://i.imgur.com/X18Nr0N.png)
 这样就是完成了，如果你要克隆到你指定的目标的话，就要先cd 到自己的目录了，克隆完成后我们可以将从jekyll下载的模板的demo所有文件复制到我们克隆下的目录中：
 
@@ -50,7 +61,6 @@ tags: 博客 Github jekyll Hexo
 修改完成后提交就可以看到效果了，在刚才打开的Git Bash中输入 
 
 提交所有文件
-
     $ git add . 
     $ git commit -a "提交说明" 
     $ git push origin master
