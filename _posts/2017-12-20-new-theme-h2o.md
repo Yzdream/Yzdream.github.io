@@ -5,20 +5,20 @@ subtitle: 'H2O Theme for Jekyll'
 date: 2017-12-20
 categories: 技术
 cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
-tags: 博客 搭建 模板
+tags: 博客 Github jekyll Hexo
 ---
 
 一直都想搭建一个自己的博客，感觉很麻烦，一直都是看资料没有去实践，这几天突然心血来潮研究了几天决定动手了，一开始准备使用wordpress来搭建，查看资料之后发现要安装很多软件，还要买域名主机，对于还是菜鸟的我来说太需要时间了，然后我就在网上查阅初学搭建博客的资料，发现可以使用Github来搭建博客，只需要安装git就可以了，很方便，而且还有一些简约的模板可以使用，于是就决定使用Github来动手尝试了，这里我是用的jekyll的模板，感觉还不错。
 
-## 搭建流程
-###第一步###
+## 搭建流程##
+### 第一步###
 既然是在Github上搭建博客，当然要有Github账号了，登录Github之后先创建我们仓库，注意：这里仓库的名称不能随便写，比如我的帐号是Yzdream，那么仓库名称应该是：Yzdream.github.io 。
 
 ![](https://i.imgur.com/jSWetF8.png)
 
 ![](https://i.imgur.com/BRC7lOA.png)
 
-###第二步###
+ ### 第二步###
 这样我们的仓库搭建完成了，接下来就是使用我们的Github Pages来搭建我们的博客界面了。
 
 ![](https://i.imgur.com/guDLIAA.png)
@@ -29,7 +29,7 @@ tags: 博客 搭建 模板
 
 到这里我们就可以使用我们的仓库访问我们的博客了。
 
-###第三步###
+### 第三步###
 无论是使用jekyll的模板还是要更新我们的博客都是要使用git的，下面安装git，直接到官网下载即可，安装的选项全部默认就可以了。
 
 [git官网 ](https://git-scm.com/)
@@ -53,7 +53,8 @@ tags: 博客 搭建 模板
 
     $ git add . 
 	$ git commit -a "提交说明" 
-	$ git push origin master 
+	$ git push origin master
+	$ git push
 这三个命令完成之后就可以看到加载模板之后的博客了。
 
 

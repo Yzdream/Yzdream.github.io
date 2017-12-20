@@ -22,7 +22,6 @@ nickname: '残梦'
 date: 2017-12-20
 bio: 'Android开发者，热爱生活，简单乐观'
 avatar: '/assets/img/profile.png'
-tags: Android 阳光 乐观 平庸
 
 # Search分享
 search: true
@@ -50,7 +49,7 @@ sns:
   github: 'https://github.com/Yzdream'
 
 # Tags 设置标签
-recommend-tags: false # whether or not display recommend-tags on the sidebar
+recommend-tags: true # whether or not display recommend-tags on the sidebar
 recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
