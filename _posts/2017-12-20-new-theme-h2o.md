@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'This is my first blog post'
+title: 'github+jekyll搭建博客'
 subtitle: 'H2O Theme for Jekyll'
 date: 2017-12-20
-categories: 技术
+categories: jekyll
 cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
 tags: 博客 Github jekyll Hexo
 ---
@@ -52,9 +52,9 @@ tags: 博客 Github jekyll Hexo
 提交所有文件
 
     $ git add . 
-	$ git commit -a "提交说明" 
-	$ git push origin master
-	$ git push
+    $ git commit -a "提交说明" 
+    $ git push origin master
+    $ git push
 这三个命令完成之后就可以看到加载模板之后的博客了。
 
 
