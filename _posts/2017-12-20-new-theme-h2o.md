@@ -36,7 +36,7 @@ tags: 博客 Github jekyll Hexo
 直接下载安装即可
 ![](https://i.imgur.com/rKPMvo1.png)
 
-###第四部
+### 第四部
 安装完成后打开 Git Bash，将我们的仓库也就是博客克隆到本地。
 ![](https://i.imgur.com/X18Nr0N.png)
 这样就是完成了，如果你要克隆到你指定的目标的话，就要先cd 到自己的目录了，克隆完成后我们可以将从jekyll下载的模板的demo所有文件复制到我们克隆下的目录中：
