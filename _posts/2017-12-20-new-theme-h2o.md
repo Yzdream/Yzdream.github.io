@@ -62,3 +62,22 @@ tags: 博客 Github jekyll Hexo
 
 
 这次从0到1，大约用了一下午时间，搭建美化博客，后续也将持续完善和更新。想想这个过程也是一波三折啊，仓库我是昨晚就建好了的，今天上午完成项目之后就看了一下jekyll的模板，然后下午就开始美化我的博客家园了，作为一个Android开发的，看到这些css、js、html代码说真的有点无从下手的感觉了，搭建之前我还问过我的一个好朋友，本来是想让他指导一下的，不过他是用的Hexo搭建博客的，博客风格很简约，需要的可以参考一下[搭建 Hexo 博客 ](https://yinwenbing.github.io/2017/06/17/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2md/)，不过还是感觉我的比较好看，哈哈哈，希望能够坚持学习。
+
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjU2Ny85MTI4">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
