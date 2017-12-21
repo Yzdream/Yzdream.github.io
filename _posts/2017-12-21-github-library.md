@@ -13,7 +13,7 @@ tags:  Github Android
 dependencies {
     compile 'com.github.Yzdream:InitFramework:v1.0'
 }
-``````
+```
 就加这么一行代码就可以使用library库了，非常简单，那么Android Studio又是怎么引用我们导入的库的呢！
 ### Android Studio使用github上的第三方库
 我们新建一个项目之后，在Project的build.gradle中有这么一段代码：
