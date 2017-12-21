@@ -8,16 +8,18 @@ tags:  Github Android
 
 ## AS 第三方库的使用 
 这里先说一下AS 第三方库的使用，再说github开源库的使用，相信很多人都和我一样不太明白这里面具体的细节，在Android Studio中引入一个library到你的项目，你只需添加如下的一行代码到模块的build.gradle文件中即可：
+
 ```
 dependencies {
-compile 'com.github.Yzdream:InitFramework:v1.0'
+	compile 'com.github.Yzdream:InitFramework:v1.0'
 }
 ```
-
 就加这么一行代码就可以使用library库了，非常简单，那么Android Studio又是怎么引用我们导入的库的呢！
+
 ### Android Studio使用github上的第三方库
 我们新建一个项目之后，在Project的build.gradle中有这么一段代码：
-`````
+
+```
 	allprojects {
 	    repositories {
 	        google()
@@ -63,7 +65,7 @@ allprojects {
 
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjU2Ny85MTI4">
-	<script type="text/javascript">
+<script type="text/javascript">
    (function(d, s) {
    var j, e = d.getElementsByTagName(s)[0];
 
