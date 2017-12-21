@@ -9,9 +9,9 @@ tags:  Github Android
 ## AS 第三方库的使用 
 这里先说一下AS 第三方库的使用，再说github开源库的使用，相信很多人都和我一样不太明白这里面具体的细节，在Android Studio中引入一个library到你的项目，你只需添加如下的一行代码到模块的build.gradle文件中即可：
 
-    dependencies {
-    	compile 'com.github.Yzdream:InitFramework:v1.0'
-    }
+dependencies {
+	compile 'com.github.Yzdream:InitFramework:v1.0'
+}
 
 
 就加这么一行代码就可以使用library库了，非常简单，那么Android Studio又是怎么引用我们导入的库的呢！
@@ -20,24 +20,24 @@ tags:  Github Android
 我们新建一个项目之后，在Project的build.gradle中有这么一段代码：
 
 
-    allprojects {
-    	repositories {
-    		google()
-    		jcenter()  
-    	}
-    }
+allprojects {
+	repositories {
+		google()
+		jcenter()  
+	}
+}
 
 Android Studio正是从这里配置的仓库服务器上下载library的，Apache Maven是Apache开发的一个工具，提供了用于贡献library的文件服务器。我查看资料发现一般都是两个标准的Android library文件服务器：jcenter 和 Maven Central，而AS 3.0之后 都有了google()，不过我们都是使用一个免费的仓库服务器,JitPack,这里就需要定义jitpack的服务器地址：
 
 
 
-    allprojects {
-    	repositories {
-    		google()
-    		jcenter()
-    		maven { url 'https://jitpack.io' }
-    	}
-    }
+allprojects {
+	repositories {
+		google()
+		jcenter()
+		maven { url 'https://jitpack.io' }
+	}
+}
 
 ## 发布GitHub开源库
 
