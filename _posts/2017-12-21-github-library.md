@@ -19,6 +19,7 @@ dependencies {
 
 ### Android Studio使用github上的第三方库
 我们新建一个项目之后，在Project的build.gradle中有这么一段代码：
+
 ````
 allprojects {
     repositories {
