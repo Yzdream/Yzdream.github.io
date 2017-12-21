@@ -20,15 +20,14 @@ dependencies {
 我们新建一个项目之后，在Project的build.gradle中有这么一段代码：
 
 
-allprojects {
+```allprojects {
 	repositories {
 		google()
 		jcenter()  
 	}
-}
+}```
 
 Android Studio正是从这里配置的仓库服务器上下载library的，Apache Maven是Apache开发的一个工具，提供了用于贡献library的文件服务器。我查看资料发现一般都是两个标准的Android library文件服务器：jcenter 和 Maven Central，而AS 3.0之后 都有了google()，不过我们都是使用一个免费的仓库服务器,JitPack,这里就需要定义jitpack的服务器地址：
-
 
 
 allprojects {
