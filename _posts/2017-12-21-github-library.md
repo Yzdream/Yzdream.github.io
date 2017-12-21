@@ -6,7 +6,7 @@ categories: Github
 tags:  Github Android
 ---
 
-##AS 第三方库的使用 
+## AS 第三方库的使用 
 这里先说一下AS 第三方库的使用，在Android Studio中引入一个library到你的项目，你只需添加如下的一行代码到模块的build.gradle文件中即可：
 
 ```
@@ -17,7 +17,7 @@ dependencies {
 
 就加这么一行代码就可以使用library库了，非常简单，那么Android Studio又是怎么引用我们导入的库的呢！
 
-###Android Studio使用github上的第三方库
+### Android Studio使用github上的第三方库
 我们新建一个项目之后，在Project的build.gradle中有这么一段代码：
 
 ```
@@ -40,7 +40,7 @@ allprojects {
     }
 }
 ```
-##发布GitHub开源库
+## 发布GitHub开源库
 
  - 首先你得将你的项目变成Libaray类型的,然后发布到GitHub上.这里我就不多说怎么发布到github上了.
  - 打开你的GitHub项目,生成Release文件
@@ -63,3 +63,23 @@ allprojects {
 ![这里写图片描述](http://img.blog.csdn.net/20171221145419747?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzI5Mzg0ODM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 到这里一个GitHub开源库就发布成功了，只需要在我们的项目中添加依赖就能使用了，当然也可以到github上将项目下载下来作为Module添加到项目使用，如果你不需要改源码的话建议直接添加依赖使用。[CSDN博客 版本](http://blog.csdn.net/qq_32938483/article/details/78863862)
+
+
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjU2Ny85MTI4">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
