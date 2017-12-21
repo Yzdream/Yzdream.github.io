@@ -65,7 +65,8 @@ $ git config --global user.email "123456789@qq.com"//配置用户邮箱
 $ git add .
 $ git commit -m "提交说明"
 $ git push
-```
+``` 
+
 这三个命令完成之后就可以看到加载模板之后的博客了，修改内容或者发表博客都是一样的操作。
 
 
