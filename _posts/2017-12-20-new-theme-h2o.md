@@ -42,8 +42,7 @@ tags: 博客 Github jekyll Hexo
 首先配置我们的github身份
 ```java
 $ git config --global user.name "name"//配置用户名称
-$ git config --global user.email "123456789@qq.com"//配置用户邮箱
-```
+$ git config --global user.email "123456789@qq.com"//配置用户邮箱```
 
 然后输入 $ ssh-keygen -t rsa 连续按三次回车，在C盘登录用户目录中会生成.ssh 文件, .ssh下可以找到id_rsa 和 id_rsa.pub两个文件,
 将id_rsa.pub用记事本打开，到 Github 的 Settings，点击左侧菜单的 SSH and GPG keys，点击 New SSH key，将id_rsa.pub里的内容全部复制到github中去，提交后就完成了git和github的配置了。
@@ -65,8 +64,7 @@ $ git config --global user.email "123456789@qq.com"//配置用户邮箱
 ```java
 $ git add .
 $ git commit -m "提交说明"
-$ git push
-```
+$ git push```
 这三个命令完成之后就可以看到加载模板之后的博客了，修改内容或者发表博客都是一样的操作。
 
 
