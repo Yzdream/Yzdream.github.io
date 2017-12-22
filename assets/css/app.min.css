@@ -502,7 +502,7 @@ a {
 	padding: 0
 }
 
-.search-card .count{
+/*.search-card .count{
 	position: relative;
 	margin-top: 16px;
 	padding: 10px;
@@ -513,7 +513,7 @@ a {
 	box-sizing: border-box;
 	box-shadow: 0 1px 3px rgba(0,37,55,.06);
 	border-radius: 3px;
-}
+}*/
 
 .search-card .friend {
 	position: relative;
@@ -572,7 +572,8 @@ a {
 
 .search-card .icon-search {
 	position: absolute;
-	top: 132px;
+	/*top: 122px;*/
+	top: 66px;
 	right: 18px;
 	font-size: 26px;
 	color: #cad3dc;
