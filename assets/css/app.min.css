@@ -572,8 +572,7 @@ a {
 
 .search-card .icon-search {
 	position: absolute;
-	/*top: 122px;*/
-	top: 66px;
+	top: 56px;
 	right: 18px;
 	font-size: 26px;
 	color: #cad3dc;
