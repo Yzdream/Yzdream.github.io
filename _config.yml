@@ -23,7 +23,7 @@ date: 2017-12-20
 bio: 'Android开发者，热爱生活，简单乐观'
 avatar: '/assets/img/profile.png'
 
-# Search分享
+# Search搜索
 search: true
 
 # Night mode
@@ -33,7 +33,7 @@ nightMode: true
 disqus: false
 disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
-# Share
+# Share分享
 social-share: true
 social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
 
@@ -47,6 +47,7 @@ postPatterns: 'seaOfClouds'
 sns:
 #  csdn: 'http://blog.csdn.net/qq_32938483'
   github: 'https://github.com/Yzdream'
+  juejin:'https://juejin.im/user/5a67ea00518825733b0f0a71'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
