@@ -47,7 +47,7 @@ postPatterns: 'seaOfClouds'
 sns:
 #  csdn: 'http://blog.csdn.net/qq_32938483'
   github: 'https://github.com/Yzdream'
-  juejin:'https://juejin.im/user/5a67ea00518825733b0f0a71'
+  juejin: 'https://juejin.im/user/5a67ea00518825733b0f0a71'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
