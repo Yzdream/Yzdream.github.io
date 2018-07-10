@@ -252,7 +252,7 @@ public class FilteredFactory {
          * @param response 请求结果
          * @return 过滤处理, 返回只有data数据的Observable
          */
-        private Observable<T> flatResponse(final BaseRespond<T> response) {
+        private Observable<T> flatResponse(final BaseRespond<T> response) throws RuntimeException {
             return Observable.create(new Observable.OnSubscribe<T>() {
                 @Override
                 public void call(Subscriber<? super T> subscriber) {
@@ -313,21 +313,51 @@ public abstract class CustomObserver<T> implements Observer<T> {
 
     @Override
     public void onError(Throwable e) {
-        if (e instanceof ApiExecption) {
+
+       if (e instanceof HttpException) {
+            HttpException httpException = (HttpException) e;
+            switch (httpException.code()) {
+                case UNAUTHORIZED:
+                    onError("当前请求需要用户验证");
+                    break;
+                case FORBIDDEN:
+                    onError("服务器已经理解请求，但是拒绝执行它");
+                    break;
+                case NOT_FOUND:
+                    onError("服务器异常，请稍后再试");
+                    break;
+                case REQUEST_TIMEOUT:
+                    onError("请求超时");
+                    break;
+                case GATEWAY_TIMEOUT:
+                    onError("作为网关或者代理工作的服务器尝试执行请求时，未能及时从上游服务器（URI 标识出的服务器，例如 HTTP、FTP、LDAP）或者辅助服务器（例如 DNS）收到响应");
+                    break;
+                case INTERNAL_SERVER_ERROR:
+                    onError("服务器遇到了一个未曾预料的状况，导致了它无法完成对请求的处理");
+                    break;
+                case BAD_GATEWAY:
+                    onError("作为网关或者代理工作的服务器尝试执行请求时，从上游服务器接收到无效的响应");
+                    break;
+                case SERVICE_UNAVAILABLE:
+                    onError("由于临时的服务器维护或者过载，服务器当前无法处理请求");
+                    break;
+                default:
+                    onError("网络错误");  //其它均视为网络错误
+                    break;
+            }
+        } else if (e instanceof ApiExecption) {
             ApiExecption execption = (ApiExecption) e;
-            onError(execption.getMessage());
-        } else if (e instanceof ConnectException)
-            onError("连接失败");
-        else if (e instanceof JsonParseException || e instanceof JSONException)
-            onError("解析失败");
-        else if (e instanceof SSLHandshakeException)
-            onError("证书验证失败");
-        else if (e instanceof UnknownHostException)
-            onError("网络异常");
-        else if (e instanceof SocketTimeoutException)
-            onError("请求超时");
-        else
+           onError(execption.getMessage());
+        } else if (e instanceof ConnectException) onError("连接失败");
+        else if (e instanceof JsonParseException || e instanceof JSONException) onError("解析失败");
+        else if (e instanceof SSLHandshakeException) onError("证书验证失败");
+        else if (e instanceof UnknownHostException) onError("网络异常");
+        else if (e instanceof SocketTimeoutException) onError("连接超时");
+        else{
+            e.printStackTrace();
             onError("服务器错误");
+        }
+
     }
 
     @Override
