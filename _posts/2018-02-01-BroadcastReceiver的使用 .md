@@ -3,7 +3,7 @@ layout: post
 title: 'BroadcastReceiver的使用'
 date: 2018-02-01
 categories: Android
-tags: Android
+tags: broadcastReceiver
 ---
 ### BroadcastReceiver概述
 

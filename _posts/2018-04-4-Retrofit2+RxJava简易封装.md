@@ -3,7 +3,7 @@ layout: post
 title: 'Retrofit2+Rxjava简易封装'
 date: 2018-04-4
 categories: Android
-tags: Android
+tags: retrofit
 ---
 
 Retrofit作为当下主流网络框架之一，在github上已达到27.2的Star，而在Retrofit2的基础上拓展Rxjava和RxAndroid使得网络处理更加的方便，对于网络设置，数据处理也有了更多了拓展性。

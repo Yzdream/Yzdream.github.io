@@ -3,7 +3,7 @@ layout: post
 title: 'EditText的drawable监听'
 date: 2018-01-31
 categories: Android
-tags: Android
+tags: edittext
 ---
 
 在我们的输入框中最右边一般有一个小图标，特别是密码框，有的是一个删除图标，有的是一个眼睛，那么点击这个小图标的事件是怎么监听的呢，先看看我们的效果图
